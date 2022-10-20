@@ -13,7 +13,7 @@ const SingleQuiz = () => {
       <h2>Quiz Topics: {name}</h2>
       <p>Total Qustion: {total}</p>
       <div className="container">
-        <div className="row ">
+        <div className="row px-4">
           {questions.map((question) => (
             <Question
               key={question.id}
