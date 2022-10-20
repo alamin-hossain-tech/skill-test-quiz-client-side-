@@ -5,11 +5,12 @@ import Question from "../Question/Question";
 const SingleQuiz = () => {
   const data = useLoaderData();
   console.log(data);
-  const { name, questions, total } = data.data;
+  const { name, questions, total, logo } = data.data;
   let count = 0;
   return (
     <div className="my-5">
-      <h2>This is Single Quiz: {name}</h2>
+      <img className="img-fluid w-25 mb-5" src={logo} alt="" />
+      <h2>Quiz Topics: {name}</h2>
       <p>Total Qustion: {total}</p>
       <div className="container">
         <div className="row ">

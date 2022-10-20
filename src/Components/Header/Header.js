@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+        <div className="container">
+          <Link className="navbar-brand fw-bold" to="/">
+            SKILL TEST
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,13 +29,12 @@ const Header = () => {
               <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
-              <a className="nav-link" href="#">
-                Features
-              </a>
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
-              <a className="nav-link">Disabled</a>
+              <Link className="nav-link" to="/blog">
+                Blog
+              </Link>
+              <Link className="nav-link" to="/stats">
+                Stats
+              </Link>
             </div>
           </div>
         </div>

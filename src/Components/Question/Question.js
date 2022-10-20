@@ -13,31 +13,33 @@ const Question = ({ questions, count }) => {
         .classList.add("bg-success", "text-light", "fw-bold");
     } else {
       toast.error("Wrong Answer😞");
-      document.getElementById(option).classList.add("bg-danger", "text-light");
+      document
+        .getElementById(option)
+        .classList.add("bg-danger", "text-light", "fw-bold");
     }
   };
 
   return (
-    <div className="border rounded my-4 text-start p-5">
+    <div className="border border-info rounded my-4 text-start p-5">
       <div className="d-flex justify-content-between ">
-        <div className="question d-flex ">
+        <div className="question d-flex fw-bold">
           {`Question No: ${count}. `}
           <div
-            className="ms-3"
+            className="ms-3 "
             dangerouslySetInnerHTML={{ __html: question }}
           ></div>
         </div>
         <div>
           <button
             className="show-answer"
-            onClick={() => toast.success(`Answer is : ${correctAnswer}`)}
+            onClick={() => toast.info(`Answer is : ${correctAnswer}`)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
               fill="currentColor"
-              class="bi bi-eye-fill"
+              className="bi bi-eye-fill"
               viewBox="0 0 16 16"
             >
               <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
