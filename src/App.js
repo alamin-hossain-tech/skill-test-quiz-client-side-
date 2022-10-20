@@ -10,11 +10,11 @@ import Stats from "./Components/Stats/Stats";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "",
       element: <Main></Main>,
       children: [
         {
-          path: "/home",
+          path: "/",
           element: <Home></Home>,
           loader: async () =>
             fetch("https://openapi.programming-hero.com/api/quiz"),
@@ -22,9 +22,9 @@ function App() {
         {
           path: "/quiz/:id",
           element: <SingleQuiz></SingleQuiz>,
-          loader: (params) => {
+          loader: ({ params }) => {
             return fetch(
-              `https://openapi.programming-hero.com/api/quiz/${params.params.id}`
+              `https://openapi.programming-hero.com/api/quiz/${params.id}`
             );
           },
         },

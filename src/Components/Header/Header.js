@@ -14,7 +14,7 @@ const Header = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container">
-          <NavLink className="navbar-brand fw-bold" to="/home">
+          <NavLink className="navbar-brand fw-bold" to="/">
             SKILL TEST
           </NavLink>
           <button
@@ -37,7 +37,8 @@ const Header = () => {
                 className="nav-link"
                 style={navStyle}
                 // aria-current="page"
-                to="/home"
+                to="/"
+                end
               >
                 Home
               </NavLink>
