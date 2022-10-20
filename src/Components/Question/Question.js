@@ -6,7 +6,7 @@ import "./Question.css";
 const Question = ({ questions, count }) => {
   const { question, correctAnswer, id, options } = questions;
   const checkAns = (option) => {
-    if (correctAnswer == option) {
+    if (correctAnswer === option) {
       toast.success("Correct Answer 🎉");
       document
         .getElementById(option)
