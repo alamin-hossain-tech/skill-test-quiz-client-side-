@@ -1,15 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const navStyle = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? "bold" : "normal",
+      textDecoration: isActive ? "underline" : "none",
+    };
+  };
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container">
-          <Link className="navbar-brand fw-bold" to="/">
+          <NavLink className="navbar-brand fw-bold" to="/home">
             SKILL TEST
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,15 +33,20 @@ const Header = () => {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <NavLink
+                className="nav-link"
+                style={navStyle}
+                // aria-current="page"
+                to="/home"
+              >
                 Home
-              </Link>
-              <Link className="nav-link" to="/blog">
+              </NavLink>
+              <NavLink className="nav-link" style={navStyle} to="/blog">
                 Blog
-              </Link>
-              <Link className="nav-link" to="/stats">
+              </NavLink>
+              <NavLink className="nav-link" style={navStyle} to="/stats">
                 Stats
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>
