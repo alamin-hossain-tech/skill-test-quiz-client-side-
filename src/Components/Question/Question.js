@@ -54,6 +54,7 @@ const Question = ({ questions, count }) => {
             className={`d-flex align-items-center p-3 border rounded `}
             id={option}
             key={option}
+            onClick={() => checkAns(option)}
           >
             <input
               onClick={() => checkAns(option)}
@@ -74,11 +75,7 @@ const Question = ({ questions, count }) => {
               theme="dark"
             />
 
-            <label
-              className="ms-2"
-              htmlFor={option}
-              onClick={() => checkAns(option)}
-            >
+            <label className="ms-2" htmlFor={option}>
               {option}
             </label>
           </div>
