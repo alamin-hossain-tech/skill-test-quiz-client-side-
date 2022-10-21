@@ -6,7 +6,7 @@
   .hero-flex {
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    /* padding: 0 50px; */
   }
   .right-hero {
     margin-top: 50px;

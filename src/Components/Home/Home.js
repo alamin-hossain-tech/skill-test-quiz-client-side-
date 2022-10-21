@@ -16,7 +16,7 @@ const Home = () => {
         <Hero></Hero>
       </div>
       <div>
-        <h2 className="mt-5 pt-5">Topics</h2>
+        <h2 className="mt-5 pt-5"> Quiz Topics</h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 container mx-auto py-5">
           {quizTopics.map((quiz) => (
             <QuizGrid quiz={quiz} key={quiz.id}></QuizGrid>

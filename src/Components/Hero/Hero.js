@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="text-uppercase mt-2 ">
           Boost Your Confidence Through Skill Test
         </h1>
-        <p className="mb-5">
+        <p className="mb-4">
           Like quizzes and tests, an exam is a tool to measure your students
           mastery of the course content, but it has weightier consequences. An
           exam is more formal in nature and often can determine whether a
