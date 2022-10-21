@@ -1,6 +1,6 @@
 ## Project Name: Skill Test
 
-[Live Site Link](https://hello.com)
+[Live Site Link](https://skill-test-alaminmerndev.netlify.app/)
 
 1. This Project based on React.
 2. Bootstrap framework used.
