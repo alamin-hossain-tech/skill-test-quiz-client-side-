@@ -6,7 +6,8 @@ const Header = () => {
   const navStyle = ({ isActive }) => {
     return {
       fontWeight: isActive ? "bold" : "normal",
-      textDecoration: isActive ? "underline" : "none",
+      // textDecoration: isActive ? "underline" : "none",
+      borderBottom: isActive ? "3px solid #0d6efd" : "none",
     };
   };
 
