@@ -20,10 +20,10 @@ const Question = ({ questions, count }) => {
   };
 
   return (
-    <div className="border border-info rounded my-4 text-start p-5">
+    <div className="border border-info rounded my-4 text-start p-3">
       <div className="d-flex justify-content-between ">
         <div className="question d-flex fw-bold">
-          {`Question No: ${count}. `}
+          {`Q${count}. `}
           <div
             className="ms-3 "
             dangerouslySetInnerHTML={{ __html: question }}
@@ -57,7 +57,7 @@ const Question = ({ questions, count }) => {
             onClick={() => checkAns(option)}
           >
             <input
-              onClick={() => checkAns(option)}
+              // onClick={() => checkAns(option)}
               type="radio"
               name={id}
               id={option}

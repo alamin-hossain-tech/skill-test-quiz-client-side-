@@ -9,7 +9,7 @@ const SingleQuiz = () => {
   let count = 0;
   return (
     <div className="my-5">
-      <img className="img-fluid w-25 mb-5" src={logo} alt="" />
+      <img className="img-fluid w-25 mb-5 bg-dark" src={logo} alt="" />
       <h2>Quiz Topics: {name}</h2>
       <p>Total Qustion: {total}</p>
       <div className="container">
